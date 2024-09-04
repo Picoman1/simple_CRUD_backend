@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/mongodb")
+mongoose.connect("Your Connection String")
     .then((req, res) => {
         console.log("database connected")
         app.listen(3000, () => {
